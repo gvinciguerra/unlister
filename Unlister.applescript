@@ -1,3 +1,5 @@
+-- https://github.com/gvinciguerra/unlister
+
 to getUnsubscribeCommands(unsubscribeHeader)
 	set awk to " | awk  'NR>1{print $1}' RS='<' FS='>'"
 	set result to do shell script "echo " & quoted form of unsubscribeHeader & awk
